@@ -33,10 +33,8 @@ p {
 	font-size: 2em;
 }
 
-.hero a {
-	color: red;
-	font-size: 24px;
-	text-decoration: none;
+#no-3 {
+  color: red;
 }
 
 #footer {
