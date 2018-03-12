@@ -237,12 +237,57 @@ header {
 
 .works {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 100px; }
   .works h2 {
     font-family: "Cedarville Cursive", cursive;
     font-size: 3.125rem;
     text-transform: capitalize;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 50px; }
+  .works .work {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; }
+    .works .work .showcase {
+      display: flex;
+      margin-bottom: 20px; }
+      .works .work .showcase .video {
+        width: 70%;
+        background: lightgray;
+        border: 1px solid white; }
+      .works .work .showcase .icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        text-align: center; }
+        .works .work .showcase .icons .icon {
+          width: 70px; }
+        .works .work .showcase .icons .live,
+        .works .work .showcase .icons .github {
+          font-size: 2.5rem;
+          margin-top: 20px; }
+          .works .work .showcase .icons .live p,
+          .works .work .showcase .icons .github p {
+            font-size: 0.9375rem;
+            font-family: "Dosis", sans-serif; }
+  .works .work-text {
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    width: 70%;
+    margin: 0 auto; }
+    .works .work-text h4 {
+      font-size: 1.875rem;
+      margin-bottom: 10px; }
+    .works .work-text p {
+      font-family: "Dosis", sans-serif;
+      font-size: 1.125rem;
+      line-height: 2.5;
+      text-align: justify;
+      text-align: center; }
 
 .contact {
   clear: both;

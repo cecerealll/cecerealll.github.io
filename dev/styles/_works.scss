@@ -121,8 +121,63 @@
 .works {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
+    // padding: 20px;
     h2 {
         @include heading;
         text-align: center;
+        margin-bottom: 50px;
+        
+        // color: white;
+    }
+    .work {
+        padding: 20px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        .showcase {
+            display: flex;
+            margin-bottom: 20px;
+            .video {
+                width: 70%;
+                background: lightgray;
+                border: 1px solid white;
+                // height: 100%;
+            }
+            .icons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                text-align: center;
+                .icon {
+                    width: 70px;
+                }
+                .live,
+                .github {
+                    font-size: remCalc(40);
+                    margin-top: 20px;
+                    p {
+                        font-size: remCalc(15);
+                        font-family: $body2;
+                    }
+                }
+            }
+        }
+    }
+    .work-text {
+        text-align: center;
+        font-family: $body2;
+        width: 70%;
+        margin: 0 auto;
+        h4 {
+            font-size: remCalc(30);
+            margin-bottom: 10px;
+        }
+        p {
+            @include body;
+            text-align: center;        
+        }
     }
 }
