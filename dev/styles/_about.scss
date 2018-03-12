@@ -1,0 +1,110 @@
+// .about {
+//     display: flex;
+//     margin-bottom: 200px;
+//     flex-direction: column;
+//     h2 {
+//         align-self:  flex-end;
+//         font-size: remCalc(50);
+//         font-family: $heading;
+//     }
+//     .about-container{
+//         display: flex;
+//         justify-content: space-between;
+//         > div {
+//             width: 35%;
+//         }
+//         .about-text {
+//             text-align: right;
+//             line-height: 2.5;
+//             padding-top: 5%;
+//             width: 60%;
+//             font-family: $body;
+//         }
+//     }
+// }
+
+// .about {
+//     position: relative;
+//     margin-bottom: 200px;
+//     h2 {
+//         @include heading;
+//         margin-bottom: 20px;
+//         background: url(../../assets/brushstroke-5.png) left center no-repeat;
+//         background-size: 250px 100px;
+//         padding: 20px;
+//         &:hover {
+//             background-size: 600px 100px;
+//         }
+//     }
+//     .about-container {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         .about-img {
+//             width: 300px;
+//             border-radius: 50%;
+//             overflow: hidden;
+//             // float: left;
+//         }
+//         .about-text {
+//             width: 60%;
+//             @include body;
+//         }
+//     }
+// }
+
+.about {
+    position: relative;
+    margin-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 3px solid white;
+    padding: 20px;
+    // &:before {
+    //     content: url(../../assets/about-arrow.png);
+    //     @include before;
+    //     transform: scale(0.3) translateX(-50%);
+    //     left: 45%;
+    //     top: -100%;
+    // }
+    h2 {
+        background: url(../../assets/brushstroke.png) center no-repeat;
+        padding: 10px 20px;
+        background-size: 200px;
+        @include heading;
+        margin-bottom: 20px;
+    }
+    .about-img {
+        width: 30%;
+        // shape-outside: circle(50%);
+        // float: left;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        // margin: 10px;
+        // margin-left: 50%;
+        // outline: 1px dashed black;
+        img { 
+            border: 1px dashed black;
+            border-radius: 50%;
+            padding: 15px;
+        }
+        // float: left;
+        // position: relative;
+        // left: 50%;
+    }
+    p {
+        @include body;
+        width: 50%;
+        position: relative;
+        &:after {
+            content: url('../../assets/about-arrow.png');
+            position: absolute;
+            left: 40%;
+            transform: scale(0.3);
+            top: 150px;
+        }
+        // float: left;
+    }
+
+}

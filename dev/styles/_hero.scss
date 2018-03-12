@@ -1,0 +1,205 @@
+// .var-highlight {
+//     color: #C0AD60;
+// }
+
+// .string-highlight {
+//     color: rgba(253, 149, 90, 0.8);
+// }
+
+// #typewriter {
+//     font-size: 2em;
+//     margin: 0;
+//     font-family: "Courier New";
+//     &:after {
+//         content: "|";
+//         animation: blink 500ms linear infinite alternate;
+//     }
+// }
+
+// @-webkit-keyframes blink {
+//     0% {
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity: 1;
+//     }
+// }
+
+// @-moz-keyframes blink {
+//     0% {
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity: 1;
+//     }
+// }
+
+// @keyframes blink {
+//     0% {
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity: 1;
+//     }
+// }
+
+// blinking words animation
+@keyframes words {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+// bounce animation
+@keyframes bounce {
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+.hero {
+    background: url(../../assets/hero3.png), url(../../assets/hero4.png); 
+    background-position:  bottom right, top 50px left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 400px, 300px;
+    // background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-transform: capitalize;
+    // margin-bottom: 30px;
+    
+    h1 {
+        font-size: remCalc(100);
+        font-family: $cursive;
+        margin-bottom: 10px;
+        // span {
+        //     // animation: words 1s infinite;
+        // }
+        // margin-bottom: 50px;
+        // text-transform: capitalize;
+    }
+
+    h2 {
+        @include heading;
+        // color: darkgray;
+        color: rgb(68, 68, 68);
+        
+    }
+    .hero-container {
+        font-family: $cursive;
+        font-size: remCalc(25);
+        position: absolute;
+        // background: rgba(38, 125, 196, 0.253);
+        width: 80%;
+        height: 80%;
+        outline: 3px solid white;
+        p {
+            display: inline-block;
+            color: rgb(68, 68, 68);    
+        }
+        .trait {
+            &:hover {
+                animation-play-state: paused;
+                cursor: pointer;
+            }
+        }
+        .trait1 {
+            animation: words ease 3s infinite;
+            position: absolute;
+            left: 20%;
+            top: 18%;
+        }
+        .trait2 {
+            animation: words ease 2s infinite;
+            position: absolute;
+            color: $hackeryou;
+            left: 40%;
+            top: 30%;
+        }
+        .trait3 {
+            animation: words ease 2s infinite;
+            animation-delay: 1.5s;
+            position: absolute;
+            left: 55%;
+            top: 10%;
+        }
+        
+        .trait4 {
+            animation: words ease 1.5s infinite;
+            animation-delay: 1.5s;
+            position: absolute;
+            left: 75%;
+            top: 25%;
+        }
+        .trait5 {
+            animation: words ease 2s infinite;
+            animation-delay: 1.5s;
+            position: absolute;
+            left: 0;
+            top: 65%;
+        }
+        .trait6 {
+            animation: words ease 2s infinite;
+            animation-delay: 1.5s;
+            position: absolute;
+            left: 35%;
+            top: 77%;
+        }
+        .trait7 {
+            animation: words ease 2.5s infinite;
+            animation-delay: 1.5s;
+            position: absolute;
+            left: 65%;
+            top: 70%;
+        }
+    }
+    .read-more {
+        // display: flex;
+        position: absolute;
+        // letter-spacing: 1.5px;
+        z-index: 2;
+        bottom: 15%;
+        font-family: $body2;
+        font-size: remCalc(20);
+        color: rgb(68, 68, 68);
+        font-weight: 700;
+        padding: 10px 20px;
+        border: 1px dashed #000;
+        // padding-bottom: 5px;
+        // position: relative;
+        &:after {
+            content: url(../../assets/connect-arrow-down.png);
+            position: absolute;
+            display: block;
+            transform: scale(0.2);
+            top: -60px;
+        }
+        &:hover {
+             animation: bounce 1s;
+        }
+        p {
+            margin-left: 10px;
+        }
+    }
+}

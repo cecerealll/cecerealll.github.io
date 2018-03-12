@@ -1,0 +1,15 @@
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 200px;
+    .coffee {
+        width: 300px;
+    }
+    button {
+        font-size: remCalc(50);
+        width: 30%;
+        padding: 40px 20px;
+    }   
+}

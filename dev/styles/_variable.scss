@@ -1,0 +1,25 @@
+$heading: 'Raleway', sans-serif;
+$body: 'Raleway', sans-serif;
+$cursive: 'Cedarville Cursive', cursive;
+$body2: 'Dosis', sans-serif;
+$main-color: #ff5e3a;
+$hackeryou: rgb(218, 55, 50);
+
+
+@mixin heading {
+    font-family: $cursive;
+    font-size: remCalc(50);
+    text-transform: capitalize;
+}
+
+@mixin body {
+    font-family: $body2;
+    font-size: remCalc(18);
+    line-height: 2.5;
+    text-align: justify;
+}
+
+@mixin before {
+    display: block;
+    position: absolute;
+}

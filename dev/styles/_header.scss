@@ -1,0 +1,20 @@
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 35px;
+    font-family: $body2;
+    font-size: remCalc(20);
+    font-weight: bold;
+    // color:rgb(52, 97, 155);
+    color: black;
+    z-index: 3;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            margin-left: 30px;
+        }
+    }
+}
