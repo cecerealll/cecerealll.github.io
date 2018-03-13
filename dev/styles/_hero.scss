@@ -105,7 +105,7 @@
     h2 {
         @include heading;
         // color: darkgray;
-        color: rgb(68, 68, 68);  
+        color: $grey;  
     }
     .hero-arrow {
         width: 50px;

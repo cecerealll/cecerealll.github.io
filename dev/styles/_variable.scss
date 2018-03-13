@@ -6,6 +6,8 @@ $heading2: 'Shadows Into Light',cursive;
 $cursive2: 'Amatic SC', cursive;
 
 
+          
+$grey: rgb(68, 68, 68);
 $main-color: #ff5e3a;
 $hackeryou: rgb(218, 55, 50);
 
@@ -14,6 +16,7 @@ $hackeryou: rgb(218, 55, 50);
     font-family: $cursive2;
     font-size: remCalc(50);
     text-transform: capitalize;
+    text-align: center;
 }
 
 @mixin body {

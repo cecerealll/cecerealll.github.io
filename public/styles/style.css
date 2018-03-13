@@ -45,9 +45,10 @@ body {
   font-size: 100%; }
 
 main {
-  background-position: bottom right, top 20px left, top right 15%;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 300px, 300px, 250px;
+  background: url(../../assets/background-splatter3.png), url(../../assets/background-splatter4.png);
+  background-position: top 200px left -350px, top  right -300px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 500px, 500px;
   background-attachment: fixed; }
 
 .wrapper {
@@ -128,6 +129,7 @@ header {
     font-family: "Amatic SC", cursive;
     font-size: 3.125rem;
     text-transform: capitalize;
+    text-align: center;
     color: #444444; }
   .hero .hero-arrow {
     width: 50px;
@@ -204,7 +206,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 3px solid white;
   padding: 20px; }
   .about h2 {
     background: url(../../assets/brushstroke.png) center no-repeat;
@@ -213,6 +214,7 @@ header {
     font-family: "Amatic SC", cursive;
     font-size: 3.125rem;
     text-transform: capitalize;
+    text-align: center;
     margin-bottom: 20px; }
   .about .about-img {
     width: 30%;
@@ -244,6 +246,7 @@ header {
     font-family: "Amatic SC", cursive;
     font-size: 3.125rem;
     text-transform: capitalize;
+    text-align: center;
     text-align: center;
     padding: 20px;
     margin-bottom: 30px;
@@ -284,18 +287,21 @@ header {
         position: absolute;
         right: 5%;
         bottom: 5%;
-        text-transform: capitalize; }
+        text-transform: capitalize;
+        padding: 5px 15px;
+        background: #444444;
+        color: white; }
         .works .work .video .view h4 {
-          font-size: 1.875rem;
+          font-size: 1.25rem;
           font-family: "Amatic SC", cursive;
           font-weight: bold; }
         .works .work .video .view .live,
         .works .work .video .view .github {
-          font-size: 1.875rem;
+          font-size: 1.25rem;
           margin-left: 10px; }
           .works .work .video .view .live p,
           .works .work .video .view .github p {
-            font-size: 0.9375rem;
+            font-size: 1rem;
             font-family: "Dosis", sans-serif; }
           .works .work .video .view .live:hover,
           .works .work .video .view .github:hover {
@@ -329,16 +335,24 @@ header {
         border: 1px solid black;
         padding: 5px 12px; }
 
-.bathroom.bathroom .video:before {
+.bathroom.bathroom .video:before,
+.advisory.advisory .video:before {
   content: ''; }
 
-.bathroom.bathroom .video:after {
+.bathroom.bathroom .video:after,
+.advisory.advisory .video:after {
   content: url(../../assets/work-arrow.png);
   display: block;
   position: absolute;
   transform: scaleX(-0.6) scaleY(0.6) rotate(25deg);
   left: -25%;
   bottom: -40%; }
+
+.skills h2 {
+  font-family: "Amatic SC", cursive;
+  font-size: 3.125rem;
+  text-transform: capitalize;
+  text-align: center; }
 
 .contact {
   clear: both;
@@ -359,6 +373,7 @@ header {
     font-family: "Amatic SC", cursive;
     font-size: 3.125rem;
     text-transform: capitalize;
+    text-align: center;
     margin-bottom: 20px;
     position: relative; }
     .contact h3:before {

@@ -195,20 +195,24 @@
                 right: 5%;
                 bottom: 5%;
                 text-transform: capitalize;
+                padding: 5px 15px;
+                background: $grey;
+                color: white;
+                // border-radius: 30%;
                 // color: rgba(238, 132, 34, 0.904); // padding: 10px; // position: relative;
                 // margin-bottom: 10px;
                 h4 {
                     // align-self: flex-end;
-                    font-size: remCalc(30);
+                    font-size: remCalc(20);
                     font-family: $cursive2;
                     font-weight: bold;
                 }
                 .live,
                 .github {
-                    font-size: remCalc(30);
+                    font-size: remCalc(20);
                     margin-left: 10px; // margin-top: 20px;
                     p {
-                        font-size: remCalc(15);
+                        font-size: remCalc(16);
                         font-family: $body2;
                     }
                     &:hover {
@@ -266,7 +270,8 @@
 }
 
 // individual tweaks
-.bathroom.bathroom {
+.bathroom.bathroom, 
+.advisory.advisory {
     .video {
         &:before {
             content: '';
