@@ -2,12 +2,16 @@ $heading: 'Raleway', sans-serif;
 $body: 'Raleway', sans-serif;
 $cursive: 'Cedarville Cursive', cursive;
 $body2: 'Dosis', sans-serif;
+$heading2: 'Shadows Into Light',cursive;
+$cursive2: 'Amatic SC', cursive;
+
+
 $main-color: #ff5e3a;
 $hackeryou: rgb(218, 55, 50);
 
 
 @mixin heading {
-    font-family: $cursive;
+    font-family: $cursive2;
     font-size: remCalc(50);
     text-transform: capitalize;
 }

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Cedarville+Cursive|Dosis" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Cedarville+Cursive|Dosis|Shadows+Into+Light|Amatic+SC" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
@@ -22,99 +22,180 @@
 		</nav>
 	</header>
 
-	<main>
-		<section class="hero">
-			<h1>< Cece Fan <span>/</span>></h1>
-			<h2>web developer</h2>
-			<a href="#about" class="read-more">read more</a>
-			<div class="hero-container">
-				<p class="trait1 trait">sketch artist</p>
-				<p class="trait2 trait">hackerYou graduate</p>
-				<p class="trait3 trait">black mirror theorist</p>
-				<p class="trait4 trait">spice is life</p>
-				<p class="trait5 trait">frequent ikea visitor</p>
-				<!-- <p class="trait6">wuuuut</p>								 -->
-				<p class="trait7 trait">biologist</p>				
-			</div>
-		</section>
+	<section class="hero">
+		<h1>
+			< Cece Fan <span>/</span>></h1>
+		<h2>web developer</h2>
+		<!-- <div class="hero-arrow"><img src="assets/hero-arrow.png" alt=""></div> -->
+		<a href="#about" class="read-more">read more <i class="fas fa-caret-down"></i></a>
+		<div class="hero-container">
+			<p class="trait1 trait">sketch artist</p>
+			<p class="trait2 trait">hackerYou graduate</p>
+			<p class="trait3 trait">black mirror theorist</p>
+			<p class="trait4 trait">spice is life</p>
+			<p class="trait5 trait">frequent ikea visitor</p>
+			<p class="trait6 trait">biologist</p>
+		</div>
+	</section>
 
+	<main>
 		<section class="about wrapper" id="about">
 			<div class="about-img"><img src="assets/me-2.png" alt=''></div>
 			<h2>< ! -- about me -- ! ></h2>
 			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere incidunt nam dicta quis aut quo exercitationem, maiores quaerat. Temporibus optio cupiditate hic vitae tenetur quidem blanditiis eius maiores laudantium! Possimus.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. In natus a doloremque hic ullam enim harum rerum modi animi! Neque possimus quod sequi aspernatur sapiente eum quibusdam nostrum vel. A. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium  </p>
 		</section>
 
-		<!-- <section class="about wrapper" id='about'>
-			<div>
-				<h2>about me </h2>
-			</div>
-
-			<div class="border"></div>
-			<div class="about-container">
-				<div class="about-img">
-					<img src="assets/me-2.png" alt="">
-				</div>
-
-				<div class="about-text">
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus sunt laboriosam quia doloribus quidem iste dignissimos corporis cupiditate, laudantium voluptate, magnam commodi voluptates earum rem voluptatem quas quae in placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugit minima nesciunt illum officia iusto architecto nemo, quas quisquam expedita earum rerum esse ullam cum eaque, ad quasi. Libero, voluptates.</p>
-				</div>
-			</div>
-		</section> -->
 
 		<section class="works wrapper">
 			<h2>< ! -- my works -- ! ></h2>
-			<!-- <div class="icon"><img src="" alt=""></div>
-			<div class="icon"><img src="" alt=""></div>
-			<div class="icon"><img src="" alt=""></div>
-			<div class="icon"><img src="" alt=""></div> -->
 
 			<div class="work tamagotchi">
-				<div class="showcase">
-					<div class="video">
-						<video width="100%" autoplay loop><source src="assets/websiteupdate.webm" type="video/webm"></video>
-					</div>
-	
-					<div class="icons">
-						<div class='icon'>
-							<img src="assets/tamagotchi.png" alt="">
-						</div>
+				<div class="icon">
+					<img src="assets/tamagotchi.png" alt="">
+				</div>
+				
+				<div class="video">
+					<video width="100%"  autoplay loop>
+						<source src="assets/tamagotchi.webm" type="video/webm">
+					</video>
+					<div class="view">
+						<h4>tamagotchi</h4>
 						<div class='live'>
 							<a href="#">
 								<i class="fas fa-mouse-pointer fa-fw"></i>
-								<p>view live</p>
+								<p>live</p>
 							</a>
 						</div>
 						<div class='github'>
 							<a href="#">
 								<i class="fab fa-github-square fa-fw"></i>
-								<p>view github</p>
+								<p>github</p>
 							</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="work-text">
-					<h4>tamagotchi</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic assumenda blanditiis expedita vitae natus nulla illum numquam? Ad officia repudiandae, temporibus architecto est ipsa culpa molestiae, mollitia aperiam nesciunt dignissimos!</p>
-					<p>HTML5 CSS3 Sass JavaScript</p>
+					<p class="work-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic assumenda blanditiis expedita vitae natus nulla illum numquam? Ad officia repudiandae, temporibus architecto est ipsa culpa molestiae, mollitia aperiam nesciunt dignissimos!</p>
+					<p class="uses"><span>HTML5</span> <span>CSS3</span> <span>Sass</span> <span>JavaScript</span></p>
 				</div>
 			</div>
-
+			
 			<div class="work bathroom">
-				<div class="gif">
-
+				<div class="icon">
+					<img src="assets/toilet-3.png" alt="">
+				</div>
+				
+				<div class="video">
+					<video width="100%" autoplay loop>
+						<source src="assets/bathroom.webm" type="video/webm">
+					</video>
+					<div class="view">
+						<h4>bathroom finder</h4>
+						<div class='live'>
+							<a href="#">
+								<i class="fas fa-mouse-pointer fa-fw"></i>
+								<p>live</p>
+							</a>
+						</div>
+						<div class='github'>
+							<a href="#">
+								<i class="fab fa-github-square fa-fw"></i>
+								<p>github</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="work-text">
+					<p class="work-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic assumenda blanditiis expedita vitae natus nulla illum numquam?
+						Ad officia repudiandae, temporibus architecto est ipsa culpa molestiae, mollitia aperiam nesciunt dignissimos!</p>
+					<p class="uses">
+						<span>HTML5</span>
+						<span>CSS3</span>
+						<span>Sass</span>
+						<span>JavaScript</span>
+						<span>jQuery</span>						
+					</p>
 				</div>
 			</div>
 
 			<div class="work advisory">
-				<div class="gif">
-
+				<div class="icon">
+					<img src="assets/business.png" alt="">
+				</div>
+				
+				<div class="video">
+					<video width="100%" autoplay loop>
+						<source src="assets/business.webm" type="video/webm">
+					</video>
+					<div class="view">
+						<h4>PSD conversion</h4>
+						<div class='live'>
+							<a href="#">
+								<i class="fas fa-mouse-pointer fa-fw"></i>
+								<p>live</p>
+							</a>
+						</div>
+						<div class='github'>
+							<a href="#">
+								<i class="fab fa-github-square fa-fw"></i>
+								<p>github</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="work-text">
+					<p class="work-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic assumenda blanditiis expedita vitae natus nulla illum numquam?
+						Ad officia repudiandae, temporibus architecto est ipsa culpa molestiae, mollitia aperiam nesciunt dignissimos!</p>
+					<p class="uses">
+						<span>HTML5</span>
+						<span>CSS3</span>
+						<span>Sass</span>
+					</p>
 				</div>
 			</div>
 
 			<div class="work cocktail">
-				<div class="gif">
-
+				<div class="icon">
+					<img src="assets/cocktail.png" alt="">
+				</div>
+				
+				<div class="video">
+					<video width="100%" autoplay loop>
+						<source src="assets/cocktail.webm" type="video/webm">
+					</video>
+					<div class="view">
+						<h4>cocktail party</h4>
+						<div class='live'>
+							<a href="#">
+								<i class="fas fa-mouse-pointer fa-fw"></i>
+								<p>live</p>
+							</a>
+						</div>
+						<div class='github'>
+							<a href="#">
+								<i class="fab fa-github-square fa-fw"></i>
+								<p>github</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="work-text">
+					<p class="work-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic assumenda blanditiis expedita vitae natus nulla illum numquam?
+						Ad officia repudiandae, temporibus architecto est ipsa culpa molestiae, mollitia aperiam nesciunt dignissimos!</p>
+					<p class="uses">
+						<span>HTML5</span>
+						<span>CSS3</span>
+						<span>Sass</span>
+						<span>JavaScript</span>
+						<span>jQuery</span>
+						<span>React</span>
+						<span>Firebase</span>
+						
+					</p>
 				</div>
 			</div>
 
@@ -153,7 +234,8 @@
 			</div>
 		</section>
 		<section class="credit">
-
+			<p>designed by Cece Fan</p>
+			<p>banner art by  Natalia Tyulkina</p>
 		</section>
 	</footer>
 	

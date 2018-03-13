@@ -44,6 +44,12 @@ body {
   width: 100vw;
   font-size: 100%; }
 
+main {
+  background-position: bottom right, top 20px left, top right 15%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 300px, 300px, 250px;
+  background-attachment: fixed; }
+
 .wrapper {
   width: 80%;
   max-width: 1170px;
@@ -115,15 +121,22 @@ header {
   text-transform: capitalize; }
   .hero h1 {
     font-size: 6.25rem;
-    font-family: "Cedarville Cursive", cursive;
-    margin-bottom: 10px; }
+    font-family: "Amatic SC", cursive;
+    margin-bottom: 80px;
+    text-shadow: 2px 2px 2px grey; }
   .hero h2 {
-    font-family: "Cedarville Cursive", cursive;
+    font-family: "Amatic SC", cursive;
     font-size: 3.125rem;
     text-transform: capitalize;
     color: #444444; }
+  .hero .hero-arrow {
+    width: 50px;
+    position: absolute;
+    bottom: 20%;
+    left: 47%;
+    transform: rotate(-38deg); }
   .hero .hero-container {
-    font-family: "Cedarville Cursive", cursive;
+    font-family: "Amatic SC", cursive;
     font-size: 1.5625rem;
     position: absolute;
     width: 80%;
@@ -144,54 +157,42 @@ header {
       animation: words ease 2s infinite;
       position: absolute;
       color: #da3732;
-      left: 40%;
-      top: 30%; }
+      left: 50%;
+      transform: translateX(-50%) scale(1.5);
+      top: 20%; }
     .hero .hero-container .trait3 {
       animation: words ease 2s infinite;
       animation-delay: 1.5s;
       position: absolute;
-      left: 55%;
+      left: 60%;
       top: 10%; }
     .hero .hero-container .trait4 {
       animation: words ease 1.5s infinite;
       animation-delay: 1.5s;
       position: absolute;
-      left: 75%;
+      left: 73%;
       top: 25%; }
     .hero .hero-container .trait5 {
       animation: words ease 2s infinite;
       animation-delay: 1.5s;
       position: absolute;
-      left: 0;
-      top: 65%; }
+      left: 15%;
+      top: 45%; }
     .hero .hero-container .trait6 {
-      animation: words ease 2s infinite;
-      animation-delay: 1.5s;
-      position: absolute;
-      left: 35%;
-      top: 77%; }
-    .hero .hero-container .trait7 {
       animation: words ease 2.5s infinite;
       animation-delay: 1.5s;
       position: absolute;
       left: 65%;
-      top: 70%; }
+      top: 55%; }
   .hero .read-more {
     position: absolute;
     z-index: 2;
     bottom: 15%;
     font-family: "Dosis", sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     color: #444444;
-    font-weight: 700;
     padding: 10px 20px;
     border: 1px dashed #000; }
-    .hero .read-more:after {
-      content: url(../../assets/connect-arrow-down.png);
-      position: absolute;
-      display: block;
-      transform: scale(0.2);
-      top: -60px; }
     .hero .read-more:hover {
       animation: bounce 1s; }
     .hero .read-more p {
@@ -209,7 +210,7 @@ header {
     background: url(../../assets/brushstroke.png) center no-repeat;
     padding: 10px 20px;
     background-size: 200px;
-    font-family: "Cedarville Cursive", cursive;
+    font-family: "Amatic SC", cursive;
     font-size: 3.125rem;
     text-transform: capitalize;
     margin-bottom: 20px; }
@@ -240,54 +241,104 @@ header {
   flex-direction: column;
   margin-bottom: 100px; }
   .works h2 {
-    font-family: "Cedarville Cursive", cursive;
+    font-family: "Amatic SC", cursive;
     font-size: 3.125rem;
     text-transform: capitalize;
     text-align: center;
-    margin-bottom: 50px; }
-  .works .work {
     padding: 20px;
+    margin-bottom: 30px;
+    background: url(../../assets/brushstroke-2.png) center no-repeat;
+    background-size: 200px; }
+  .works .work {
     position: relative;
     display: flex;
-    flex-wrap: wrap; }
-    .works .work .showcase {
-      display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 100%; }
+    .works .work .icon {
+      width: 70px;
+      position: relative;
+      bottom: -30px;
+      z-index: 3; }
+    .works .work .video {
+      width: 70%;
+      border-left: 2px solid #000;
+      border-right: 2px solid black;
+      position: relative;
       margin-bottom: 20px; }
-      .works .work .showcase .video {
-        width: 70%;
-        background: lightgray;
-        border: 1px solid white; }
-      .works .work .showcase .icons {
+      .works .work .video:before {
+        content: url(../../assets/work-arrow.png);
+        display: block;
+        position: absolute;
+        transform: scale(0.6) rotate(10deg);
+        right: -25%;
+        bottom: -40%; }
+      .works .work .video .view {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 30%;
-        text-align: center; }
-        .works .work .showcase .icons .icon {
-          width: 70px; }
-        .works .work .showcase .icons .live,
-        .works .work .showcase .icons .github {
-          font-size: 2.5rem;
-          margin-top: 20px; }
-          .works .work .showcase .icons .live p,
-          .works .work .showcase .icons .github p {
+        text-align: center;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        text-transform: capitalize; }
+        .works .work .video .view h4 {
+          font-size: 1.875rem;
+          font-family: "Amatic SC", cursive;
+          font-weight: bold; }
+        .works .work .video .view .live,
+        .works .work .video .view .github {
+          font-size: 1.875rem;
+          margin-left: 10px; }
+          .works .work .video .view .live p,
+          .works .work .video .view .github p {
             font-size: 0.9375rem;
             font-family: "Dosis", sans-serif; }
+          .works .work .video .view .live:hover,
+          .works .work .video .view .github:hover {
+            transform: scale(1.5); }
+      .works .work .video video {
+        height: auto;
+        object-fit: cover;
+        display: block; }
   .works .work-text {
     text-align: center;
     font-family: "Dosis", sans-serif;
-    width: 70%;
-    margin: 0 auto; }
-    .works .work-text h4 {
-      font-size: 1.875rem;
-      margin-bottom: 10px; }
-    .works .work-text p {
+    width: 75%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px 30px; }
+    .works .work-text .work-desc {
       font-family: "Dosis", sans-serif;
       font-size: 1.125rem;
       line-height: 2.5;
       text-align: justify;
-      text-align: center; }
+      text-align: center;
+      width: 80%; }
+    .works .work-text .uses {
+      word-spacing: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .works .work-text .uses span {
+        border: 1px solid black;
+        padding: 5px 12px; }
+
+.bathroom.bathroom .video:before {
+  content: ''; }
+
+.bathroom.bathroom .video:after {
+  content: url(../../assets/work-arrow.png);
+  display: block;
+  position: absolute;
+  transform: scaleX(-0.6) scaleY(0.6) rotate(25deg);
+  left: -25%;
+  bottom: -40%; }
 
 .contact {
   clear: both;
@@ -305,7 +356,7 @@ header {
     top: -25%; }
   .contact h3 {
     width: 100%;
-    font-family: "Cedarville Cursive", cursive;
+    font-family: "Amatic SC", cursive;
     font-size: 3.125rem;
     text-transform: capitalize;
     margin-bottom: 20px;

@@ -16,6 +16,14 @@ body {
     //   background-attachment: fixed;
 }
 
+main {
+    //    background: url(../../assets/background-splatter2.png), url(../../assets/background-splatter3.png);
+       background-position : bottom right, top 20px left, top right 15%;
+       background-repeat: no-repeat, no-repeat, no-repeat;
+       background-size: 300px, 300px, 250px;
+       background-attachment: fixed;
+}
+
 @function remCalc($fontSize) {
     @return ($fontSize / 16) * 1rem; // nts: logic behind it: the base font in browswer is 16px divide pixel value by 16 and multiply by 1rem, value imported in remCalc will be calculated into rem value
 }

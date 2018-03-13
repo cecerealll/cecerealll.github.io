@@ -91,8 +91,10 @@
     
     h1 {
         font-size: remCalc(100);
-        font-family: $cursive;
-        margin-bottom: 10px;
+        font-family: $cursive2;
+        margin-bottom: 80px;
+        text-shadow: 2px 2px 2px grey;
+        // font-weight: 700;
         // span {
         //     // animation: words 1s infinite;
         // }
@@ -103,11 +105,17 @@
     h2 {
         @include heading;
         // color: darkgray;
-        color: rgb(68, 68, 68);
-        
+        color: rgb(68, 68, 68);  
+    }
+    .hero-arrow {
+        width: 50px;
+        position: absolute;
+        bottom: 20%;
+        left: 47%;
+        transform: rotate(-38deg);
     }
     .hero-container {
-        font-family: $cursive;
+        font-family: $cursive2;
         font-size: remCalc(25);
         position: absolute;
         // background: rgba(38, 125, 196, 0.253);
@@ -134,14 +142,15 @@
             animation: words ease 2s infinite;
             position: absolute;
             color: $hackeryou;
-            left: 40%;
-            top: 30%;
+            left: 50%;
+            transform: translateX(-50%) scale(1.5);
+            top: 20%;
         }
         .trait3 {
             animation: words ease 2s infinite;
             animation-delay: 1.5s;
             position: absolute;
-            left: 55%;
+            left: 60%;
             top: 10%;
         }
         
@@ -149,29 +158,29 @@
             animation: words ease 1.5s infinite;
             animation-delay: 1.5s;
             position: absolute;
-            left: 75%;
+            left: 73%;
             top: 25%;
         }
         .trait5 {
             animation: words ease 2s infinite;
             animation-delay: 1.5s;
             position: absolute;
-            left: 0;
-            top: 65%;
+            left: 15%;
+            top: 45%;
         }
+        // .trait6 {
+        //     animation: words ease 2s infinite;
+        //     animation-delay: 1.5s;
+        //     position: absolute;
+        //     left: 35%;
+        //     top: 47%;
+        // }
         .trait6 {
-            animation: words ease 2s infinite;
-            animation-delay: 1.5s;
-            position: absolute;
-            left: 35%;
-            top: 77%;
-        }
-        .trait7 {
             animation: words ease 2.5s infinite;
             animation-delay: 1.5s;
             position: absolute;
             left: 65%;
-            top: 70%;
+            top: 55%;
         }
     }
     .read-more {
@@ -181,20 +190,22 @@
         z-index: 2;
         bottom: 15%;
         font-family: $body2;
-        font-size: remCalc(20);
+        font-size: remCalc(18);
         color: rgb(68, 68, 68);
-        font-weight: 700;
+        // font-weight: 700;
         padding: 10px 20px;
         border: 1px dashed #000;
         // padding-bottom: 5px;
         // position: relative;
-        &:after {
-            content: url(../../assets/connect-arrow-down.png);
-            position: absolute;
-            display: block;
-            transform: scale(0.2);
-            top: -60px;
-        }
+        // &:after {
+        //     content: url(../../assets/connect-arrow-down.png);
+        //     position: absolute;
+        //     display: block;
+        //     transform: scale(0.3);
+        //     // left: 0;
+        //     // left: 50%;
+        //     top: -60px;
+        // }
         &:hover {
              animation: bounce 1s;
         }
