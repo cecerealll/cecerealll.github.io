@@ -326,6 +326,7 @@ credits:
  hero image Natalia Tyulkina
   Photo by Natalya Moshnina on Unsplash brush strokes
  Photo by el alce web on Unsplash - laptop with the pencils
+ coffee by masha gross
   
 
    "yo my name is cece" -Noel Matta

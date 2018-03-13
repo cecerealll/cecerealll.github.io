@@ -1,6 +1,19 @@
 .skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     h2 {
         @include heading;
     }
-    
+     .devicon {
+         margin-top: 50px;
+        //  z-index: 3;
+        margin: 0 auto;
+         display: flex;
+         width: 100%;
+         justify-content: space-between;
+         .skill {
+             font-size: remCalc(30);
+         }
+     }
 }

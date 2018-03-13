@@ -75,11 +75,11 @@
 }
 
 .hero {
-    background: url(../../assets/hero3.png), url(../../assets/hero4.png); 
-    background-position:  bottom right, top 50px left;
+    background: url(../../assets/hero-background2.png);
+    background-position:   center, top 50px left;
     background-repeat: no-repeat, no-repeat;
-    background-size: 400px, 300px;
-    // background-attachment: fixed;
+    background-size: 1200px, 300px;
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -88,12 +88,14 @@
     position: relative;
     text-transform: capitalize;
     // margin-bottom: 30px;
-    
+    .name {
+        text-shadow: 2px 2px 2px grey;
+        
     h1 {
         font-size: remCalc(100);
         font-family: $cursive2;
-        margin-bottom: 80px;
-        text-shadow: 2px 2px 2px grey;
+        margin-bottom: 50px;
+        // text-shadow: 2px 2px 2px grey;
         // font-weight: 700;
         // span {
         //     // animation: words 1s infinite;
@@ -106,6 +108,8 @@
         @include heading;
         // color: darkgray;
         color: $grey;  
+        // padding: 10px;
+    }
     }
     .hero-arrow {
         width: 50px;
@@ -118,6 +122,8 @@
         font-family: $cursive2;
         font-size: remCalc(25);
         position: absolute;
+        text-shadow: 1px 1px 1px grey;
+        
         // background: rgba(38, 125, 196, 0.253);
         width: 80%;
         height: 80%;
@@ -128,8 +134,11 @@
         }
         .trait {
             &:hover {
-                animation-play-state: paused;
-                cursor: pointer;
+                animation: none;
+                // opacity: 1;
+                transform: scale(2);
+                cursor: default;
+
             }
         }
         .trait1 {
@@ -142,8 +151,9 @@
             animation: words ease 2s infinite;
             position: absolute;
             color: $hackeryou;
-            left: 50%;
-            transform: translateX(-50%) scale(1.5);
+            left: 42%;
+            // transform: translateX(-50%);
+            font-size: remCalc(30);
             top: 20%;
         }
         .trait3 {

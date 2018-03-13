@@ -10,22 +10,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<header class="hidden">
+	<header >
 		<h2>Cece</h2>
 		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Work</a></li>
-				<li><a href="#">Contact</a></li>
+			<ul id="top-menu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#work">Work</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<section class="hero">
-		<h1>
-			< Cece Fan <span>/</span>></h1>
-		<h2>web developer</h2>
+	<section class="hero" id="home">
+		<div class="name">
+			<h1> < Cece Fan <span>/</span>></h1>
+			<h2>web developer</h2>
+		</div>
 		<!-- <div class="hero-arrow"><img src="assets/hero-arrow.png" alt=""></div> -->
 		<a href="#about" class="read-more">read more <i class="fas fa-caret-down"></i></a>
 		<div class="hero-container">
@@ -36,6 +37,11 @@
 			<p class="trait5 trait">frequent ikea visitor</p>
 			<p class="trait6 trait">biologist</p>
 		</div>
+		<!-- <svg height="210" width="500">
+			<line x1="0" y1="0" x2="2" y2="2" style="stroke:rgb(255,0,0);stroke-width:2" />
+		</svg>
+		 -->
+		
 	</section>
 
 	<main>
@@ -43,10 +49,15 @@
 			<div class="about-img"><img src="assets/me-2.png" alt=''></div>
 			<h2>< ! -- about me -- ! ></h2>
 			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere incidunt nam dicta quis aut quo exercitationem, maiores quaerat. Temporibus optio cupiditate hic vitae tenetur quidem blanditiis eius maiores laudantium! Possimus.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. In natus a doloremque hic ullam enim harum rerum modi animi! Neque possimus quod sequi aspernatur sapiente eum quibusdam nostrum vel. A. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium  </p>
+			<div class="social">
+				<i class="fab fa-twitter-square"></i>
+				<i class="fab fa-github-square"></i>
+				<i class="fas fa-envelope-square"></i>
+			</div>
 		</section>
 
 
-		<section class="works wrapper">
+		<section class="works wrapper" id="work">
 			<h2>< ! -- my works -- ! ></h2>
 
 			<div class="work tamagotchi">
@@ -207,30 +218,50 @@
 
 		</section>
 
-		<section class="skills wrapper">
+		<section class="wrapper contact-form">
+			<form class="coffee" action="https://formspree.io/cecilian.fan123@gmail.com" method="POST">
+				<h2>< !-- coffee? --! ></h2>
+				<div class="coffee-container">
+					<div class="coffee-img">
+						<img src="assets/coffee.png" alt="">
+					</div>
+					<div class="coffee-text">
+						<div class="coffee-top">
+							<label for="first-name">First Name</label>
+							<input  name="first name" type="text" placeholder="First Name *" required>
+							
+							<label for="last-name" >Last Name</label>
+							<input type="text" placeholder="Last Name *" required name="last name">
+							
+							<label for="email"></label>
+							<input type="text" placeholder="Email *" required name="email name">
+						</div>
+
+						<textarea name="" id="" cols="30" rows="10" placeholder="Where and when? And favorite drink perhaps? :) *" required  name="message"></textarea>
+						<button>Send!</button>
+					</div>
+				</div>
+			</form>
+		</section>
+
+		<section class="skills wrapper" id="contact">
 			<h2>< ! -- skills -- ! ></h2>
 			<div class="devicon">
-				<i class="devicon-html5-plain"></i>
-				<i class="devicon-css3-plain"></i>
-				<i class="devicon-sass-original"></i>
-				<i class="devicon-jquery-plain"></i>
-				<i class="devicon-javascript-plain"></i>
-				<i class="devicon-git-plain"></i>
-				<i class="devicon-github-plain"></i>
-				<i class="devicon-gulp-plain"></i>
-				<i class="devicon-react-original"></i>
-				<i class="devicon-visualstudio-plain"></i>
-				<!-- <img src="assets/firebase.svg" alt=""> -->
-
-
-
-			</div>
-
+			<i class="devicon-html5-plain skill"></i>
+			<i class="devicon-css3-plain skill"></i>
+			<i class="devicon-sass-original skill"></i>
+			<i class="devicon-jquery-plain skill"></i>
+			<i class="devicon-javascript-plain skill"></i>
+			<i class="devicon-git-plain skill"></i>
+			<i class="devicon-github-plain skill"></i>
+			<i class="devicon-gulp-plain skill"></i>
+			<i class="devicon-react-original skill"></i>
+			<i class="devicon-visualstudio-plain skill"></i>
+			<!-- <img src="assets/firebase.svg" alt=""> -->
+		</div>
 		</section>
 
-		<section class="form">
-
-		</section>
+		
 
 		
 
@@ -262,7 +293,7 @@
 		</section>
 		<section class="credit">
 			<p>coded & designed by Cece Fan</p>
-			<p>banner art by  Natalia Tyulkina</p>
+			<!-- <p>banner art by  Natalia Tyulkina</p> -->
 		</section>
 	</footer>
 	

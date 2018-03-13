@@ -1,38 +1,6 @@
-// .contact {
-//     display: flex;
-//     // align-content: center;
-//     // justify-content: center;
-    
-//     // position: relative;
-//     // flex-wrap: wrap;
-//     // .contact-me {
-//     //     width: 200px;
-//     //     height: 200px;
-//     //     position: absolute;
-//     //     align-self: center;
-//     //     margin: 0 auto;
-//     //     background: white;
-//     // }
-//     .contact-way {
-//         height: 300px;
-//         width: 25%;
-//     }
-//     .email {
-//         background: lightcyan;
-//     }
-//     .phone {
-//         background: lightcoral;
-//     }
-//     .linkedin {
-//         background: lightgray;
-//     }
-//     .twitter {
-//         background: lightsteelblue;
-//     }
-// }
-
 .contact {
     // background: grey;
+    background: url(../../assets/footer-background.png) top no-repeat;
     clear: both;
     display: flex;
     flex-wrap: wrap;
@@ -72,6 +40,7 @@
     }
     .contact-container {
         // width: 33%;
+        
         display: flex;
         justify-content: space-between;
         text-transform: capitalize;

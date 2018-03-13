@@ -18,3 +18,8 @@ header {
         }
     }
 }
+
+#top-menu li.active a {
+    border-top: 3px solid #333;
+    color: #333;
+}
