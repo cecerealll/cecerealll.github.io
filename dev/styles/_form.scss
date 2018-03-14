@@ -40,22 +40,17 @@
         @include heading;
         margin-bottom: 80px;
         transition: 0.5s;
-        res
         &:hover,
         &:focus {
             background-size: 300px;
             
         }
         @media (max-width: 480px) {
-            background: url(../../assets/watercolor-8.png) center no-repeat;
-            background-size: 150px;
-            // color: white;
-            // border: 1px solid white;
-            &:hover,
-            &:focus {
-                background-size: 300px;
+            // background: url(../../assets/watercolor-8.png) center no-repeat;
+            background: white;
+            &:hover{
+                transform: scale(1.2);
             }
-            
         }
     }
     .coffee {

@@ -51,7 +51,7 @@ body {
   @media (max-width: 480px) {
     body {
       background: url(../../assets/watercolor-7.png) center no-repeat;
-      background-size: 700px;
+      background-size: 500px;
       background-attachment: fixed; } }
 
 .wrapper {
@@ -163,7 +163,7 @@ nav {
       color: #444444; }
       @media (max-width: 480px) {
         .hero .name h2 {
-          font-size: 2.5rem; } }
+          font-size: 2.8125rem; } }
       @media (max-width: 320px) {
         .hero .name h2 {
           font-size: 1.5625rem; } }
@@ -274,7 +274,7 @@ nav {
     margin-bottom: 20px; }
     @media (max-width: 480px) {
       .about h2 {
-        font-size: 2.5rem; } }
+        font-size: 2.8125rem; } }
     @media (max-width: 320px) {
       .about h2 {
         font-size: 1.5625rem; } }
@@ -357,7 +357,7 @@ nav {
     background-size: 200px; }
     @media (max-width: 480px) {
       .works h2 {
-        font-size: 2.5rem; } }
+        font-size: 2.8125rem; } }
     @media (max-width: 320px) {
       .works h2 {
         font-size: 1.5625rem; } }
@@ -535,7 +535,7 @@ nav {
     text-align: center; }
     @media (max-width: 480px) {
       .skills h2 {
-        font-size: 2.5rem; } }
+        font-size: 2.8125rem; } }
     @media (max-width: 320px) {
       .skills h2 {
         font-size: 1.5625rem; } }
@@ -591,19 +591,17 @@ nav {
     transition: 0.5s; }
     @media (max-width: 480px) {
       .contact-form .resume {
-        font-size: 2.5rem; } }
+        font-size: 2.8125rem; } }
     @media (max-width: 320px) {
       .contact-form .resume {
         font-size: 1.5625rem; } }
-    res
-.contact-form .resume:hover, .contact-form .resume:focus {
+    .contact-form .resume:hover, .contact-form .resume:focus {
       background-size: 300px; }
     @media (max-width: 480px) {
       .contact-form .resume {
-        background: url(../../assets/watercolor-8.png) center no-repeat;
-        background-size: 150px; }
-        .contact-form .resume:hover, .contact-form .resume:focus {
-          background-size: 300px; } }
+        background: white; }
+        .contact-form .resume:hover {
+          transform: scale(1.2); } }
   .contact-form .coffee {
     margin-bottom: 50px; }
     .contact-form .coffee h2 {
@@ -617,7 +615,7 @@ nav {
       background-size: 200px; }
       @media (max-width: 480px) {
         .contact-form .coffee h2 {
-          font-size: 2.5rem; } }
+          font-size: 2.8125rem; } }
       @media (max-width: 320px) {
         .contact-form .coffee h2 {
           font-size: 1.5625rem; } }
@@ -725,7 +723,7 @@ nav {
     position: relative; }
     @media (max-width: 480px) {
       .contact h3 {
-        font-size: 2.5rem; } }
+        font-size: 2.8125rem; } }
     @media (max-width: 320px) {
       .contact h3 {
         font-size: 1.5625rem; } }
@@ -765,6 +763,11 @@ nav {
         background: url(../../assets/brushstroke-4.png) center no-repeat;
         background-size: 200px;
         color: white; }
+        @media (max-width: 480px) {
+          .contact .contact-container > div:hover, .contact .contact-container > div:focus {
+            background: transparent;
+            color: black;
+            transform: scale(1.2); } }
       .contact .contact-container > div p {
         margin-bottom: 10px; }
       .contact .contact-container > div .fa-envelope-square,
