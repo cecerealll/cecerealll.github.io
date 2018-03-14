@@ -750,6 +750,9 @@ nav {
     transform: scale(0.2);
     left: 47%;
     top: -25%; }
+    @media (max-width: 1300px) {
+      .contact:after {
+        content: ''; } }
     @media (max-width: 480px) {
       .contact:after {
         content: ''; } }
@@ -825,6 +828,10 @@ nav {
           font-size: 1.125rem; }
           .contact .contact-container > div:hover, .contact .contact-container > div:focus {
             background-size: 150px; } }
+
+@media (max-width: 1300px) {
+  .contact h3:before, .contact h3:after {
+    content: ''; } }
 
 @media (max-width: 768px) {
   :after {
