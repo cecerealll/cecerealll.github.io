@@ -122,6 +122,14 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    position: relative;
+    &:after {
+        content: url('../../assets/about-arrow.png');
+        position: absolute;
+        left: 45%;
+        transform: scaleX(-0.3) scaleY(0.3);
+        bottom: -7%;
+    }
     // padding: 20px;
     h2 {
         @include heading;
@@ -144,8 +152,8 @@
         justify-content: center;
         align-items: center;
         // outline: 1px dashed salmon;   
-        margin-bottom: 20px; 
-        height: 100%; 
+        margin-bottom: 50px; 
+        // height: 100%; 
         // .title{
         //     display: flex;
         //     align-items: center;
@@ -186,8 +194,8 @@
             &:before {
                 content: url(../../assets/work-arrow.png);
                 @include before;
-                transform: scale(0.6) rotate(20deg);
-                right: -25%;
+                transform: scale(0.5) rotate(20deg);
+                right: -22%;
                 bottom: -40%;
             }
             .view {
@@ -197,9 +205,9 @@
                 text-align: center;
                 position: absolute;
                 right: -2px;
-                top: -47px;
+                top: -55px;
                 text-transform: capitalize;
-                padding: 5px 15px;
+                padding: 10px 15px;
                 background: $grey;
                 color: white;
                 // border-radius: 30%;
@@ -214,7 +222,8 @@
                 .live,
                 .github {
                     font-size: remCalc(20);
-                    margin-left: 10px; // margin-top: 20px;
+                    margin-left: 15px;
+                    transition: 0.5s; // margin-top: 20px;
                     p {
                         font-size: remCalc(16);
                         font-family: $body2;
@@ -242,7 +251,8 @@
         font-family: $body2;
         width: 75%;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+        // flex-direction: row-reverse;
         justify-content: space-between;
         margin: 0 auto;
         // background: rgba(101, 66, 134, 0.4);
@@ -254,14 +264,18 @@
             // width: 60%;
             @include body;
             text-align: center;
-            width: 80%;
+            // width: 80%;
             // margin-bottom: 10px;
               
         }
         .uses {
             word-spacing: 10px;
             display: flex;
-            flex-direction: column;
+            width: 70%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            // flex-wrap: wrap;
+            // flex-direction: column;
             justify-content: space-between;
             span {
                 // color: white;
@@ -283,8 +297,8 @@
         &:after {
             content: url(../../assets/work-arrow.png);
             @include before;
-            transform: scaleX(-0.6) scaleY(0.6) rotate(25deg);
-            left: -25%;
+            transform: scaleX(-0.5) scaleY(0.5) rotate(25deg);
+            left: -22%;
             bottom: -40%;
         }
     }

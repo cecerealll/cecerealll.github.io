@@ -1,6 +1,6 @@
 .contact {
     // background: grey;
-    background: url(../../assets/footer-background.png) top no-repeat;
+    // background: url(../../assets/footer-background.png) top no-repeat;
     clear: both;
     display: flex;
     flex-wrap: wrap;
@@ -68,4 +68,13 @@
         }
         // text-align: center;
     }
+}
+
+.credit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $body2;
+    text-transform: capitalize;
 }

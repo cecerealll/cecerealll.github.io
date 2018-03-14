@@ -1,5 +1,5 @@
 $('a').smoothScroll({
-    offset: -30
+    offset: -80
 });
 
 
