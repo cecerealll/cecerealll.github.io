@@ -11,6 +11,12 @@
         background-size: 200px;
         @include heading;
         margin-bottom: 20px;
+        @media (max-width: 480px) {
+            // background: url(../../assets/brushstroke-3.png) center no-repeat;
+            background: transparent;
+            // color: white;
+            
+        }
     }
     .about-img {
         width: 30%;
@@ -23,6 +29,9 @@
         }
         @media (max-width: 768px) {
             width: 50%;
+        }
+        @media (max-width: 480px) {
+            width: 80%;
         }
     }
     p {
@@ -39,6 +48,14 @@
         @media (max-width: 768px) {
             width: 70%;
         }
+        @media (max-width: 480px) {
+            width: 100%;
+            &:after {
+                content: '';
+            }
+        }
     }
-
+    @media (max-width: 480px) {
+        margin-bottom: 40px;
+    }
 }

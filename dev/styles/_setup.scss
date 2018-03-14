@@ -5,15 +5,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
     width: 100vw;
     font-size: 100%;
-    background: url(../../assets/background-splatter3.png),
-    url(../../assets/background-splatter4.png);
-    background-position: top 200px left -350px,
-    top right -300px;
-    background-repeat: no-repeat,
-    no-repeat;
-    background-size: 500px,
-    500px;
+    background: url(../../assets/background-splatter3.png), url(../../assets/background-splatter4.png);
+    background-position: top 200px left -350px, top right -300px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 500px, 500px;
     background-attachment: fixed;
+    @media (max-width: 480px) {
+        // background-position: top 200px left -400px, top right -330px;
+        // background-repeat: no-repeat, no-repeat;
+        background: url(../../assets/watercolor-7.png) center no-repeat;
+        background-size: 700px;
+        background-attachment: fixed;
+        
+        
+    }
     
 }
 
@@ -42,6 +47,7 @@ a {
 
 img {
     width: 100%;
+    display: block;
 }
 
 .hidden {

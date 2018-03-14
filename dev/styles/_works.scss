@@ -13,6 +13,9 @@
             left: 43%;
             bottom: -9%;
         }
+        @media (max-width: 480px) {
+            content: '';
+        }
     }
     h2 {
         @include heading;
@@ -21,6 +24,10 @@
         margin-bottom: 30px;
         background: url(../../assets/brushstroke-2.png) center no-repeat;
         background-size: 200px;
+        @media (max-width: 480px) {
+            margin-bottom: 0;
+            background: transparent;
+        }
     }
     .work {
         position: relative;
@@ -39,6 +46,10 @@
             padding: 10px;
             background: white;
             border: 2px solid black;
+            @media (max-width: 480px) {
+                padding: 5px;
+                width: 50px;
+            }
         }
         .video {
             width: 70%;
@@ -73,7 +84,7 @@
                 .live,
                 .github {
                     font-size: remCalc(20);
-                    margin-left: 15px;
+                    margin-left: 20px;
                     transition: 0.5s;
                     p {
                         font-size: remCalc(16);
@@ -81,7 +92,7 @@
                     }
                     &:hover,
                     &:focus {
-                        transform: scale(1.5)
+                        transform: scale(1.2)
                     }
                 }
                 @media (max-width: 768px) {
@@ -95,8 +106,6 @@
                 }
             }
             video {
-                // height:auto;
-                // object-fit: cover;
                 display: block;           
             }
             @media (max-width: 768px) {
@@ -106,6 +115,22 @@
                     content: '';
                 }
             }
+            @media (max-width: 480px) {
+                width: 90%;
+                .view {
+                    padding: 5px;
+                    .live, 
+                    .github {
+                        font-size: remCalc(16);
+                        p {
+                            font-size: remCalc(14);
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 480px) {
+            margin-bottom: 10px;
         }
     }
     .work-text {
@@ -144,6 +169,13 @@
             padding: 10px;
             .work-desc{
                 line-height: 1.5;
+            }
+        }
+        @media (max-width: 480px) {
+            .uses{
+                width: 90%;
+                flex-wrap: wrap;
+                justify-content: center;
             }
         }
     }

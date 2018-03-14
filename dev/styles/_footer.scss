@@ -14,6 +14,9 @@
         transform: scale(0.2);
         left: 47%;
         top: -25%;
+        @media (max-width: 480px) {
+            content: '';
+        }
     }
     
     h3 {
@@ -31,6 +34,9 @@
             position: absolute;
             top: -50%;
             left: 20%;
+            @media (max-width: 480px) {
+                content: '';
+            }
         }
         &:after {
             display: block;
@@ -39,6 +45,9 @@
             position: absolute;
             top: -55% ;
             left: 65%;
+            @media (max-width: 480px) {
+                content: '';
+            }
         }
     }
     .contact-container {
@@ -60,6 +69,7 @@
                 background: url(../../assets/brushstroke-4.png) center no-repeat;
                 background-size: 200px;
                 color: white;
+                
             }
             p  {
                 margin-bottom: 10px;
@@ -69,8 +79,17 @@
             .fa-twitter-square {
                 font-size: remCalc(30);
             }
+
+            @media (max-width: 480px) {
+                font-size: remCalc(18);
+                &:hover,
+                &:focus{
+                    background-size: 150px;
+                    // color: white;
+                    }
+                }
+            }
         }
-        // text-align: center;
     }
     @media (max-width: 768px) {
         &:after {
@@ -83,7 +102,7 @@
             }
         }
     }
-}
+
 
 .credit {
     display: flex;

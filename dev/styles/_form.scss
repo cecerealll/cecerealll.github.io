@@ -35,15 +35,27 @@
         border-radius: 50%;
         border: 1px solid black;   
         position: relative;
-
         margin: 0 auto;
         text-align: center;
         @include heading;
         margin-bottom: 80px;
         transition: 0.5s;
+        res
         &:hover,
         &:focus {
             background-size: 300px;
+            
+        }
+        @media (max-width: 480px) {
+            background: url(../../assets/watercolor-8.png) center no-repeat;
+            background-size: 150px;
+            // color: white;
+            // border: 1px solid white;
+            &:hover,
+            &:focus {
+                background-size: 300px;
+            }
+            
         }
     }
     .coffee {
@@ -57,6 +69,10 @@
             background-size: 200px;
             @media (max-width: 768px) {
                 margin-bottom: 0;
+            }
+            @media (max-width: 480px) {
+                background: transparent;
+                
             }
         }
         .coffee-container {
@@ -99,7 +115,7 @@
                     border: none;
                     padding: 20px 30px;
                     background: url(../../assets/brushstroke-2.png) center no-repeat;
-                    background-size: contain;
+                    background-size: contain;                    
                     cursor: pointer;
                     &:hover,
                     &:focus {
@@ -132,6 +148,28 @@
             }
             @media (max-width: 768px) {
                 padding: 5% 8% 5% 5%;
+            }
+            @media (max-width: 480px) {
+                flex-direction: column-reverse;
+                justify-content: center;
+                padding: 5%;
+                .coffee-img{
+                    width: 30%;
+                }
+                .coffee-text {
+                    .coffee-top {
+                        flex-direction: column;
+                        input {
+                            width: 100%;
+                            margin-bottom: 12px;
+                        }
+                    }
+                    button {
+                        font-size: remCalc(18);
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
             }
         }
     }
