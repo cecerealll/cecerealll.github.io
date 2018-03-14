@@ -456,7 +456,8 @@ nav {
             padding: 10px 15px;
             border: 1px dashed black;
             font-size: 1.25rem;
-            margin-bottom: 30px; }
+            margin-bottom: 30px;
+            width: 33%; }
         .contact-form .coffee .coffee-container .coffee-text textarea {
           width: 100%;
           border: 1px dashed black;
