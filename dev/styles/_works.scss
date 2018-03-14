@@ -28,6 +28,9 @@
             margin-bottom: 0;
             background: transparent;
         }
+        @media (max-width: 320px) {
+            padding: 0;
+        }
     }
     .work {
         position: relative;
@@ -178,6 +181,9 @@
                 justify-content: center;
             }
         }
+    }
+    @media (max-width: 320px) {
+        margin-bottom: 30px;
     }
 }
 

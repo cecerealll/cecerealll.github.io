@@ -53,6 +53,9 @@ body {
       background: url(../../assets/watercolor-7.png) center no-repeat;
       background-size: 500px;
       background-attachment: fixed; } }
+  @media (max-width: 320px) {
+    body {
+      background-size: 350px; } }
 
 .wrapper {
   width: 80%;
@@ -107,9 +110,10 @@ nav {
       nav ul {
         flex-direction: row;
         width: 100%;
+        justify-content: center;
         background: rgba(255, 255, 255, 0.9); }
         nav ul li {
-          margin-bottom: 0; } }
+          margin: 0; } }
 
 #top-menu li.active a {
   border-top: 2px dashed #333;
@@ -365,6 +369,9 @@ nav {
       .works h2 {
         margin-bottom: 0;
         background: transparent; } }
+    @media (max-width: 320px) {
+      .works h2 {
+        padding: 0; } }
   .works .work {
     position: relative;
     display: flex;
@@ -505,6 +512,9 @@ nav {
         width: 90%;
         flex-wrap: wrap;
         justify-content: center; } }
+  @media (max-width: 320px) {
+    .works {
+      margin-bottom: 30px; } }
 
 .bathroom.bathroom .video:before,
 .advisory.advisory .video:before {
@@ -747,6 +757,9 @@ nav {
       @media (max-width: 480px) {
         .contact h3:after {
           content: ''; } }
+    @media (max-width: 320px) {
+      .contact h3 {
+        margin: 0; } }
   .contact .contact-container {
     display: flex;
     justify-content: space-between;
