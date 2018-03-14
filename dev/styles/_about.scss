@@ -38,12 +38,16 @@
         @include body;
         width: 50%;
         position: relative;
+        font-size: remCalc(20);
+        line-height: 2;
+        // text-align: center;
+        
         &:after {
             content: url('../../assets/about-arrow.png');
             position: absolute;
             left: 40%;
             transform: scale(0.3);
-            top: 150px;
+            top: 120px;
         }
         @media (max-width: 768px) {
             width: 70%;

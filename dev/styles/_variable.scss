@@ -20,6 +20,10 @@ $hackeryou: rgb(218, 55, 50);
     @media (max-width: 480px) {
         font-size: remCalc(45);
     }
+    @media (max-width: 420px) {
+        font-size: remCalc(30);
+        
+    }
     @media (max-width: 320px) {
         font-size: remCalc(25);
     }
@@ -27,8 +31,9 @@ $hackeryou: rgb(218, 55, 50);
 
 @mixin body {
     font-family: $body2;
-    font-size: remCalc(18);
-    line-height: 2.5;
+    // font-size: remCalc(18);
+    font-size: remCalc(20);
+    line-height: 2;
     text-align: justify;
     @media (max-width: 480px) {
         line-height: 1.7;

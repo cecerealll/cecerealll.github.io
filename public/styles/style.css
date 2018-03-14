@@ -50,12 +50,7 @@ body {
   background-attachment: fixed; }
   @media (max-width: 480px) {
     body {
-      background: url(../../assets/watercolor-7.png) center no-repeat;
-      background-size: 500px;
-      background-attachment: fixed; } }
-  @media (max-width: 320px) {
-    body {
-      background-size: 350px; } }
+      background: none; } }
 
 .wrapper {
   width: 80%;
@@ -168,6 +163,9 @@ nav {
       @media (max-width: 480px) {
         .hero .name h2 {
           font-size: 2.8125rem; } }
+      @media (max-width: 420px) {
+        .hero .name h2 {
+          font-size: 1.875rem; } }
       @media (max-width: 320px) {
         .hero .name h2 {
           font-size: 1.5625rem; } }
@@ -246,7 +244,9 @@ nav {
     @media (max-width: 480px) {
       .hero .hero-container {
         font-size: 1.1875rem;
-        top: 10%; } }
+        top: 10%; }
+        .hero .hero-container .trait {
+          animation: none; } }
   .hero .read-more {
     position: absolute;
     z-index: 2;
@@ -279,6 +279,9 @@ nav {
     @media (max-width: 480px) {
       .about h2 {
         font-size: 2.8125rem; } }
+    @media (max-width: 420px) {
+      .about h2 {
+        font-size: 1.875rem; } }
     @media (max-width: 320px) {
       .about h2 {
         font-size: 1.5625rem; } }
@@ -301,11 +304,13 @@ nav {
         width: 80%; } }
   .about p {
     font-family: "Dosis", sans-serif;
-    font-size: 1.125rem;
-    line-height: 2.5;
+    font-size: 1.25rem;
+    line-height: 2;
     text-align: justify;
     width: 50%;
-    position: relative; }
+    position: relative;
+    font-size: 1.25rem;
+    line-height: 2; }
     @media (max-width: 480px) {
       .about p {
         line-height: 1.7;
@@ -318,7 +323,7 @@ nav {
       position: absolute;
       left: 40%;
       transform: scale(0.3);
-      top: 150px; }
+      top: 120px; }
     @media (max-width: 768px) {
       .about p {
         width: 70%; } }
@@ -362,6 +367,9 @@ nav {
     @media (max-width: 480px) {
       .works h2 {
         font-size: 2.8125rem; } }
+    @media (max-width: 420px) {
+      .works h2 {
+        font-size: 1.875rem; } }
     @media (max-width: 320px) {
       .works h2 {
         font-size: 1.5625rem; } }
@@ -476,8 +484,8 @@ nav {
     padding: 30px 30px; }
     .works .work-text .work-desc {
       font-family: "Dosis", sans-serif;
-      font-size: 1.125rem;
-      line-height: 2.5;
+      font-size: 1.25rem;
+      line-height: 2;
       text-align: justify;
       text-align: center; }
       @media (max-width: 480px) {
@@ -546,6 +554,9 @@ nav {
     @media (max-width: 480px) {
       .skills h2 {
         font-size: 2.8125rem; } }
+    @media (max-width: 420px) {
+      .skills h2 {
+        font-size: 1.875rem; } }
     @media (max-width: 320px) {
       .skills h2 {
         font-size: 1.5625rem; } }
@@ -602,6 +613,9 @@ nav {
     @media (max-width: 480px) {
       .contact-form .resume {
         font-size: 2.8125rem; } }
+    @media (max-width: 420px) {
+      .contact-form .resume {
+        font-size: 1.875rem; } }
     @media (max-width: 320px) {
       .contact-form .resume {
         font-size: 1.5625rem; } }
@@ -619,13 +633,15 @@ nav {
       font-size: 3.125rem;
       text-transform: capitalize;
       text-align: center;
-      margin-bottom: 50px;
       background: url(../../assets/brushstroke.png) center no-repeat;
       padding: 10px 20px;
       background-size: 200px; }
       @media (max-width: 480px) {
         .contact-form .coffee h2 {
           font-size: 2.8125rem; } }
+      @media (max-width: 420px) {
+        .contact-form .coffee h2 {
+          font-size: 1.875rem; } }
       @media (max-width: 320px) {
         .contact-form .coffee h2 {
           font-size: 1.5625rem; } }
@@ -635,6 +651,20 @@ nav {
       @media (max-width: 480px) {
         .contact-form .coffee h2 {
           background: transparent; } }
+    .contact-form .coffee p {
+      font-family: "Dosis", sans-serif;
+      font-size: 1.25rem;
+      line-height: 2;
+      text-align: justify;
+      text-align: center;
+      font-size: 1.5625rem; }
+      @media (max-width: 480px) {
+        .contact-form .coffee p {
+          line-height: 1.7;
+          font-size: 1rem; } }
+      @media (max-width: 320px) {
+        .contact-form .coffee p {
+          font-size: 0.875rem; } }
     .contact-form .coffee .coffee-container {
       display: flex;
       align-items: center; }
@@ -654,7 +684,7 @@ nav {
             border: 1px dashed black;
             font-size: 1.25rem;
             margin-bottom: 30px;
-            width: 33%; }
+            width: 30%; }
         .contact-form .coffee .coffee-container .coffee-text textarea {
           width: 100%;
           border: 1px dashed black;
@@ -734,6 +764,9 @@ nav {
     @media (max-width: 480px) {
       .contact h3 {
         font-size: 2.8125rem; } }
+    @media (max-width: 420px) {
+      .contact h3 {
+        font-size: 1.875rem; } }
     @media (max-width: 320px) {
       .contact h3 {
         font-size: 1.5625rem; } }

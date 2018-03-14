@@ -150,6 +150,9 @@
         @media (max-width: 480px) {
             font-size: remCalc(19);
             top: 10%;
+            .trait {
+                animation: none;
+            }
         }
         // @media screen and (max-width: 768px ) and (max-height: 1024) {
         //     top: 20%;

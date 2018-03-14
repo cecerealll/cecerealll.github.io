@@ -26,3 +26,9 @@ credits:
   
 
    "yo my name is cece" -Noel Matta
+
+   tamagotchi
+   - add an egg crack animation
+   - add a 'death' animation and an option to bring back to life
+   - save progress to browser cache or firebase? 
+   = decrease the rate at which bars go down so users dont check al the time
