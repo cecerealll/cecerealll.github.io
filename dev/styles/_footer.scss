@@ -21,6 +21,9 @@
         @include heading;
         margin-bottom: 20px;
         position: relative;
+        // padding: 5px;
+        // background: url(../../assets/brushstroke-5.png) center no-repeat;
+        // background-size: 150px;
         &:before {
             display: block;
             content: url(../../assets/connect-arrow.png);
@@ -52,7 +55,8 @@
             font-family: $body2;   
             font-size: remCalc(25);
             transition: 0.5s;
-            &:hover {
+            &:hover,
+            &:focus {
                 background: url(../../assets/brushstroke-4.png) center no-repeat;
                 background-size: 200px;
                 color: white;
@@ -68,6 +72,17 @@
         }
         // text-align: center;
     }
+    @media (max-width: 768px) {
+        &:after {
+            content: '';
+        }
+        h3 {
+            &:before,
+            &:after {
+                content: '';
+            }
+        }
+    }
 }
 
 .credit {
@@ -77,4 +92,8 @@
     align-items: center;
     font-family: $body2;
     text-transform: capitalize;
+    font-size: remCalc(16);
+    p {
+        margin-bottom: 10px;
+    }
 }

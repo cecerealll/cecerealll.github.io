@@ -6,7 +6,6 @@ $('a').smoothScroll({
 
 $(function(){
     // Cache selectors
-    // Cache selectors
     var lastId,
         topMenu = $("#top-menu"),
         topMenuHeight = topMenu.outerHeight() + 15,

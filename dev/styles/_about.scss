@@ -1,58 +1,3 @@
-// .about {
-//     display: flex;
-//     margin-bottom: 200px;
-//     flex-direction: column;
-//     h2 {
-//         align-self:  flex-end;
-//         font-size: remCalc(50);
-//         font-family: $heading;
-//     }
-//     .about-container{
-//         display: flex;
-//         justify-content: space-between;
-//         > div {
-//             width: 35%;
-//         }
-//         .about-text {
-//             text-align: right;
-//             line-height: 2.5;
-//             padding-top: 5%;
-//             width: 60%;
-//             font-family: $body;
-//         }
-//     }
-// }
-
-// .about {
-//     position: relative;
-//     margin-bottom: 200px;
-//     h2 {
-//         @include heading;
-//         margin-bottom: 20px;
-//         background: url(../../assets/brushstroke-5.png) left center no-repeat;
-//         background-size: 250px 100px;
-//         padding: 20px;
-//         &:hover {
-//             background-size: 600px 100px;
-//         }
-//     }
-//     .about-container {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         .about-img {
-//             width: 300px;
-//             border-radius: 50%;
-//             overflow: hidden;
-//             // float: left;
-//         }
-//         .about-text {
-//             width: 60%;
-//             @include body;
-//         }
-//     }
-// }
-
 .about {
     position: relative;
     margin-bottom: 130px;
@@ -76,6 +21,9 @@
             border-radius: 50%;
             padding: 15px;
         }
+        @media (max-width: 768px) {
+            width: 50%;
+        }
     }
     p {
         @include body;
@@ -87,6 +35,9 @@
             left: 40%;
             transform: scale(0.3);
             top: 150px;
+        }
+        @media (max-width: 768px) {
+            width: 70%;
         }
     }
 

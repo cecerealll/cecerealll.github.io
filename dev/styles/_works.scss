@@ -1,123 +1,3 @@
-// .work {
-//     display: flex;
-//     // height: 1000px;
-//     margin-bottom: 200px;
-//     flex-wrap: wrap;
-//     h2 {
-//         font-size: remCalc(50);
-//         margin-bottom: 30px;
-//         font-family: $heading;
-//     }
-//     .work-list {
-//         width: 50%;
-//         display: flex;
-//         flex-wrap: wrap;
-//         // height: 600px;
-        
-//         >div {
-//             width: 50%;
-//         }
-//         .work-piece {
-//             &:hover {
-//                 background: white;
-//                 height: 200px;
-//             }
-//         }
-//         .work1 {
-//             background: pink;
-//         }
-
-//         .work2 {
-//             background: lightgoldenrodyellow;
-//         }
-
-//         .work3 {
-//             background: lightblue;
-//         }
-
-//         .work4 {
-//             background: lightgreen;
-//         }
-
-//     }
-//     .work-show {
-//         width: 50%;
-//         background: lightgray;
-//     }
-//     .responsive {
-//         height: 500px;
-//         width: 100%;
-//         background: lavender;
-//     }
-// }
-
-
-// .works {
-//     display: flex;
-//     // width: 100%;
-//     flex-wrap: wrap;
-//      h2 {
-//         font-size: remCalc(50);
-//         margin-bottom: 30px;
-//         font-family: $heading;
-//         // width: 100%;
-//     }
-//     .work {
-//         width: 100%;
-//         position: relative;
-//         flex-wrap: wrap;    
-//         display: flex;
-//         margin-bottom: 100px;
-//         // background: $secondary-color;
-//         // color: white;
-//         .work-t-left,
-//         .work-t-right,
-//         .work-b-left,
-//         .work-b-right {
-//             width: 50%;
-//             height: 400px;
-//             padding: 40px;
-//             // text-align: right;
-//             h3 {
-//                 font-family: $heading;
-//                 font-size: remCalc(30);
-//                 margin-bottom: 20px;
-//             }
-//             p {
-//                 font-family: $body;
-//                 line-height: 2;
-//             }
-//         }
-//         .work-middle {
-//             position: absolute;
-//             width: 100px;
-//             height: 100px;
-//             left: 50%;
-//             transform: translateX(-50%);
-//             align-self: center;
-//         }
-//         .work-b-left {
-//             background: url()
-//         }
-//     }
-//      .work-t-right:nth-of-type(2n+1) {
-//          text-align: right;
-//      }
-//     //  .work-b-right:nth-of-type(2n) {
-//     //      background: $main-color;
-//     //      i {
-//     //          color: white;
-//     //          font-size: remCalc(90);
-//     //      }
-//     //  }
-//     .work:nth-of-type(2n +1) {
-//         background: salmon;
-//         color: white;
-//         text-align: right;
-//     }
-
-// }
-
 .works {
     display: flex;
     flex-direction: column;
@@ -129,8 +9,11 @@
         left: 45%;
         transform: scaleX(-0.3) scaleY(0.3);
         bottom: -7%;
+        @media (max-width: 768px) {
+            left: 43%;
+            bottom: -9%;
+        }
     }
-    // padding: 20px;
     h2 {
         @include heading;
         text-align: center;
@@ -138,36 +21,15 @@
         margin-bottom: 30px;
         background: url(../../assets/brushstroke-2.png) center no-repeat;
         background-size: 200px;
-
-        
-        // color: white;
     }
     .work {
-
-        // padding: 20px;
         position: relative;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        // outline: 1px dashed salmon;   
+        align-items: center; 
         margin-bottom: 50px; 
-        // height: 100%; 
-        // .title{
-        //     display: flex;
-        //     align-items: center;
-        //     margin-bottom: 20px;
-        //     .icon {
-        //         width: 50px;
-        //     }
-        //     h4 {
-        //     font-size: remCalc(30);
-        //     // margin-bottom: 10px;
-        //     font-family: $body2;
-        //     position: relative;
-        //     }
-        // }
         .icon {
             width: 70px;
             position: relative;
@@ -184,13 +46,6 @@
             border-right: 2px solid black;
             position: relative;
             margin-bottom: 20px;
-            // border-radius: 30px;
-            // background: lightgray;
-            // height: 395px;
-            
-                // max-height: 100%;
-            
-            // margin-bottom: 30px;
             &:before {
                 content: url(../../assets/work-arrow.png);
                 @include before;
@@ -199,9 +54,9 @@
                 bottom: -40%;
             }
             .view {
-                display: flex; // flex-direction: column;
+                display: flex;
                 justify-content: center;
-                align-items: center; // width: 25%;
+                align-items: center;
                 text-align: center;
                 position: absolute;
                 right: -2px;
@@ -210,11 +65,7 @@
                 padding: 10px 15px;
                 background: $grey;
                 color: white;
-                // border-radius: 30%;
-                // color: rgba(238, 132, 34, 0.904); // padding: 10px; // position: relative;
-                // margin-bottom: 10px;
                 h4 {
-                    // align-self: flex-end;
                     font-size: remCalc(20);
                     font-family: $cursive2;
                     font-weight: bold;
@@ -223,27 +74,38 @@
                 .github {
                     font-size: remCalc(20);
                     margin-left: 15px;
-                    transition: 0.5s; // margin-top: 20px;
+                    transition: 0.5s;
                     p {
                         font-size: remCalc(16);
                         font-family: $body2;
                     }
-                    &:hover {
+                    &:hover,
+                    &:focus {
                         transform: scale(1.5)
+                    }
+                }
+                @media (max-width: 768px) {
+                    position: relative;
+                    top: 100%;
+                    left: 0;
+                    .live,
+                    .github {
+                        margin-left: 25px;
                     }
                 }
             }
             video {
-                // width:100%;
-                height:auto;
-                object-fit: cover;
-                display: block;
-                // border-radius: 30px
-            // border: 1px solid black;
-                
-                
+                // height:auto;
+                // object-fit: cover;
+                display: block;           
             }
-            // height: 100%;
+            @media (max-width: 768px) {
+                width: 80%;
+                margin-bottom: 10px;
+                &:before {
+                    content: '';
+                }
+            }
         }
     }
     .work-text {
@@ -252,21 +114,13 @@
         width: 75%;
         display: flex;
         flex-direction: column-reverse;
-        // flex-direction: row-reverse;
         justify-content: space-between;
         margin: 0 auto;
-        // background: rgba(101, 66, 134, 0.4);
-        // border-radius: 30px;
-        // color: salmon;
         padding: 30px 30px;
         
         .work-desc {
-            // width: 60%;
             @include body;
             text-align: center;
-            // width: 80%;
-            // margin-bottom: 10px;
-              
         }
         .uses {
             word-spacing: 10px;
@@ -274,16 +128,24 @@
             width: 70%;
             margin: 0 auto;
             margin-bottom: 10px;
-            // flex-wrap: wrap;
-            // flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
             span {
-                // color: white;
                 border: 1px solid black;
                 padding: 5px 12px;
-                // margin-bottom: 5px;
+            }
+        }
+        @media (max-width: 768px) {
+            width: 90%;
+            .uses {
+                width: 95%;
             }
         } 
+        @media (max-width: 768px) {
+            padding: 10px;
+            .work-desc{
+                line-height: 1.5;
+            }
+        }
     }
 }
 
@@ -300,6 +162,11 @@
             transform: scaleX(-0.5) scaleY(0.5) rotate(25deg);
             left: -22%;
             bottom: -40%;
+        }
+        @media (max-width: 768px) {
+            &:after {
+                content: '';
+            }
         }
     }
 }

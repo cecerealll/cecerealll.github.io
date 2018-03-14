@@ -34,13 +34,15 @@
         height: 200px;    
         border-radius: 50%;
         border: 1px solid black;   
+        position: relative;
 
         margin: 0 auto;
         text-align: center;
         @include heading;
         margin-bottom: 80px;
         transition: 0.5s;
-        &:hover {
+        &:hover,
+        &:focus {
             background-size: 300px;
         }
     }
@@ -53,9 +55,13 @@
             background: url(../../assets/brushstroke.png) center no-repeat;
             padding: 10px 20px;
             background-size: 200px;
+            @media (max-width: 768px) {
+                margin-bottom: 0;
+            }
         }
         .coffee-container {
             display: flex;
+            align-items: center;
             .coffee-img {
                 width: 30%;
                 transform: scaleX(1.1);
@@ -95,14 +101,38 @@
                     background: url(../../assets/brushstroke-2.png) center no-repeat;
                     background-size: contain;
                     cursor: pointer;
-                    &:hover {
+                    &:hover,
+                    &:focus {
                         transform: scale(1.2);
-                    }
-                    
-                    
+                    }  
                 }
+               
             }
-            
+            @media (max-width: 768px) {
+                 .coffee-img {
+                     transform: scale(1);
+                 }
+                 .coffee-text {
+                     .coffee-top input {
+                        width: 30%;
+                        font-size: remCalc(15);
+                        margin-bottom: 7px;
+                        padding: 5px;
+                         
+                     }
+                     textarea {
+                        font-size: remCalc(15);
+                        margin-bottom: 7px;
+                        // padding: 5px;
+                        padding: 5px;
+                        
+                        height: 140px;
+                     }
+                 }
+            }
+            @media (max-width: 768px) {
+                padding: 5% 8% 5% 5%;
+            }
         }
     }
 }
