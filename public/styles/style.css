@@ -323,7 +323,7 @@ nav {
       position: absolute;
       left: 40%;
       transform: scale(0.3);
-      top: 120px; }
+      top: 130px; }
     @media (max-width: 768px) {
       .about p {
         width: 70%; } }
