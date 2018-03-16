@@ -88,15 +88,17 @@
                 .github {
                     font-size: remCalc(20);
                     margin-left: 20px;
-                    transition: 0.5s;
+                    // transition: 0.5s;
+                    animation: view 2s ease infinite;
+
                     p {
                         font-size: remCalc(16);
                         font-family: $body2;
                     }
-                    &:hover,
-                    &:focus {
-                        transform: scale(1.2)
-                    }
+                    // &:hover,
+                    // &:focus {
+                    //     transform: scale(1.2)
+                    // }
                 }
                 @media (max-width: 768px) {
                     position: relative;
@@ -108,6 +110,21 @@
                     }
                 }
             }
+            .demo {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                animation: words ease 1s infinite;
+                color: $hackeryou;
+                font-size: remCalc(40);
+                font-weight: bold;
+                font-family: $cursive2;
+                text-transform: uppercase;
+                @media (max-width: 768px) {
+                    top: 65%;
+                }
+            }
+
             video {
                 display: block;           
             }

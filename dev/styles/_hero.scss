@@ -29,6 +29,19 @@
     }
 }
 
+@keyframes view {
+    0% {
+        transform: scale(1);
+    }
+ 
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .hero {
     // background-position:   center, top 50px left;
     // background-repeat: no-repeat, no-repeat;
