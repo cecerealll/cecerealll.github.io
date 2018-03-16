@@ -442,11 +442,17 @@ nav {
         .works .work .video .view .github {
           font-size: 1.25rem;
           margin-left: 20px;
+          transition: 0.5s;
           animation: view 2s ease infinite; }
           .works .work .video .view .live p,
           .works .work .video .view .github p {
             font-size: 1rem;
             font-family: "Dosis", sans-serif; }
+          .works .work .video .view .live:hover, .works .work .video .view .live:focus,
+          .works .work .video .view .github:hover,
+          .works .work .video .view .github:focus {
+            animation: none;
+            transform: scale(1.4); }
         @media (max-width: 768px) {
           .works .work .video .view {
             position: relative;

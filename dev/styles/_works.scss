@@ -88,17 +88,18 @@
                 .github {
                     font-size: remCalc(20);
                     margin-left: 20px;
-                    // transition: 0.5s;
+                    transition: 0.5s;
                     animation: view 2s ease infinite;
 
                     p {
                         font-size: remCalc(16);
                         font-family: $body2;
                     }
-                    // &:hover,
-                    // &:focus {
-                    //     transform: scale(1.2)
-                    // }
+                    &:hover,
+                    &:focus {
+                        animation: none;
+                        transform: scale(1.4);
+                    }
                 }
                 @media (max-width: 768px) {
                     position: relative;
